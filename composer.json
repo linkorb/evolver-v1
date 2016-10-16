@@ -1,0 +1,28 @@
+{
+  "name": "evolver/evolver",
+  "description": "Evolver: Eventsourcing / CQRS framework",
+  "homepage": "https://github.com/linkorb/evolver",
+  "keywords": ["eventsourcing", "eventstore", "projector", "cqrs", "linkorb"],
+  "type": "library",
+  "authors": [
+    {
+      "name": "LinkORB Engineering",
+      "email": "engineering@linkorb.com",
+      "role": "Development"
+    }
+  ],
+  "require": {
+  },
+  "require-dev": {
+    "symfony/yaml": "~2.7",
+    "vlucas/phpdotenv": "~2.0",
+    "dbtk/schema-loader": "~2.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Evolver\\": "src/",
+      "Evolver\\Example\\": "example/"
+    }
+  },
+  "license": "MIT"
+}

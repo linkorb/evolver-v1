@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema>
+
+  <table name="person">
+    <column name="id" type="string" length="64" />
+    <column name="firstname" type="string" length="64" notnull="false" />
+    <column name="lastname" type="string" length="64" notnull="false" />
+    <column name="email" type="string" length="64" notnull="false" />
+
+    <index name="primary" primary="true" columns="id" />
+  </table>
+  
+  <table name="event_message">
+    <column name="id" type="integer" unsigned="true" autoincrement="true"/>
+    <column name="entity_id" type="string" length="64" notnull="false" />
+    <column name="entity_type" type="string" length="128" notnull="false" />
+    <column name="entity_version" type="integer" notnull="false" />
+    <column name="stamp" type="integer" notnull="false" />
+    <column name="event_type" type="string" length="128" notnull="false" />
+    <column name="event" type="text" notnull="false" />
+    <column name="metadata" type="text" notnull="false" />
+
+    <index name="primary" primary="true" columns="id" />
+    <index name="unique_entity_type_id_version" unique="true" doc="unique entity type, id and version" columns="entity_type, entity_id, entity_version" />
+  </table>
+
+</schema>
