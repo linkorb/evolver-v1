@@ -1,5 +1,5 @@
 {
-  "name": "evolver/evolver",
+  "name": "linkorb/evolver",
   "description": "Evolver: Eventsourcing / CQRS framework",
   "homepage": "https://github.com/linkorb/evolver",
   "keywords": ["eventsourcing", "eventstore", "projector", "cqrs", "linkorb"],
