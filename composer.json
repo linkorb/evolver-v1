@@ -11,12 +11,11 @@
       "role": "Development"
     }
   ],
-  "require": {
-  },
   "require-dev": {
     "symfony/yaml": "~2.7",
     "vlucas/phpdotenv": "~2.0",
-    "dbtk/schema-loader": "~2.1"
+    "dbtk/schema-loader": "~2.1",
+    "phpunit/phpunit": "^9.6"
   },
   "autoload": {
     "psr-4": {
